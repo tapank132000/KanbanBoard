@@ -3,39 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanban Board</title>
+    <title>Pro Kanban Board</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="board-header">
-        <h1>Kanban Board</h1>
+        <h1>Pro Kanban</h1>
         <form id="task-form">
-            <input type="text" id="task-input" placeholder="New task..." autocomplete="off">
+            <input type="text" id="task-input" placeholder="What needs to be done?" autocomplete="off" required>
             <button type="submit">Add Task</button>
         </form>
     </div>
 
     <div class="board">
         <div class="lane">
-            <h3 class="heading">To Do</h3>
-            <div class="task-zone" id="todo-lane">
-                <p class="task" draggable="true">Research competitors</p>
-                <p class="task" draggable="true">Set up database</p>
-            </div>
+            <h3 class="heading todo-heading">To Do</h3>
+            <div class="task-zone" id="todo-lane"></div>
         </div>
 
         <div class="lane">
-            <h3 class="heading">In Progress</h3>
-            <div class="task-zone" id="doing-lane">
-                <p class="task" draggable="true">Build API endpoints</p>
-            </div>
+            <h3 class="heading doing-heading">In Progress</h3>
+            <div class="task-zone" id="doing-lane"></div>
         </div>
 
         <div class="lane">
-            <h3 class="heading">Done</h3>
-            <div class="task-zone" id="done-lane">
-                <p class="task" draggable="true">Design system architecture</p>
-            </div>
+            <h3 class="heading done-heading">Done</h3>
+            <div class="task-zone" id="done-lane"></div>
         </div>
     </div>
 
