@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="board-header">
+        <h1>Kanban Board</h1>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="New task..." autocomplete="off">
+            <button type="submit">Add Task</button>
+        </form>
+    </div>
+
+    <div class="board">
+        <div class="lane">
+            <h3 class="heading">To Do</h3>
+            <div class="task-zone" id="todo-lane">
+                <p class="task" draggable="true">Research competitors</p>
+                <p class="task" draggable="true">Set up database</p>
+            </div>
+        </div>
+
+        <div class="lane">
+            <h3 class="heading">In Progress</h3>
+            <div class="task-zone" id="doing-lane">
+                <p class="task" draggable="true">Build API endpoints</p>
+            </div>
+        </div>
+
+        <div class="lane">
+            <h3 class="heading">Done</h3>
+            <div class="task-zone" id="done-lane">
+                <p class="task" draggable="true">Design system architecture</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
